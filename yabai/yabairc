@@ -1,0 +1,24 @@
+# bspm stack or float
+yabai -m config layout bsp
+
+yabai -m window_placement second_child
+
+# padding
+yabai -m config top_padding 4
+yabai -m config bottom_padding 4
+yabai -m config left_padding 4
+yabai -m config right_padding 4
+yabai -m config window_gap 4
+
+# mouse settings
+yabai -m config mouse_modifier alt
+# left click drag
+yabai -m config mouse_action1 move
+# right click drag
+yabai -m config mouse_action2 resize
+
+yabai -m mouse_drop_action swap
+
+
+# disable specific app window
+yabai -m rule --add app="^System Settings$" manage=off
